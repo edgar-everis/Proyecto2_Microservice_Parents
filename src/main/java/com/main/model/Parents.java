@@ -23,19 +23,31 @@ public class Parents {
 
 	@Id
     private String id;
-    @NotEmpty
+   
+	@NotEmpty
     private String fullname;
+	
     @NotEmpty
     private String gender;
+    
     @NotEmpty
     @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
     private LocalDate birthdate;
+   
     @NotEmpty
     private String typedoc;
+    
     @NotEmpty
     private String document;
+    
     @NotEmpty
     private String id_usu;
+    
+    @NotEmpty
+    private String idstudent;
+    
+    @NotEmpty
+    private String idfamily;
     
    
 }
