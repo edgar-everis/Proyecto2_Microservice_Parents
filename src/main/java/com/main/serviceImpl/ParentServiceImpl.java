@@ -1,6 +1,7 @@
 package com.main.serviceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.main.model.Parents;
 import com.main.repository.ParentsRepository;
@@ -9,6 +10,7 @@ import com.main.service.ParentService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Service
 public class ParentServiceImpl implements ParentService {
 
 	@Autowired

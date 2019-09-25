@@ -57,7 +57,7 @@ public class ParentsController {
 	//Crea un nuevo pariente
 	@PostMapping("/Parents/create")
 	@ResponseStatus(HttpStatus.CREATED)
-	public Mono<Parents> createStudent(@RequestBody Parents parents)
+	public Mono<Parents> createParents(@RequestBody Parents parents)
 	{
 		return service.createParents(parents);
 		
@@ -66,7 +66,7 @@ public class ParentsController {
 	//Actualiza un pariente
 		@PutMapping("/update/{id}")
 		
-		public Mono<Parents> updateStudent(@PathVariable String id,@RequestBody Parents parents)
+		public Mono<Parents> updateParents(@PathVariable String id,@RequestBody Parents parents)
 		{
 		return service.Modifyparents(id, parents);
 			}
@@ -74,7 +74,7 @@ public class ParentsController {
 		//Elimina un pariente
     @DeleteMapping("/delete/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public Mono<Void> deleteStudents(@PathVariable String id) {
+    public Mono<Void> deleteParents(@PathVariable String id) {
 		
 		return service.deleteById(id);
 	}
