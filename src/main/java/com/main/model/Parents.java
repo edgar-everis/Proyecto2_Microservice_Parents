@@ -18,7 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Document
+@Document(collection = "Parents")
 public class Parents {
 
 	@Id
@@ -39,9 +39,7 @@ public class Parents {
     
     @NotEmpty
     private String document;
-    
-    @NotEmpty
-    private String id_usu;
+  
     
     @NotEmpty
     private String idstudent;
