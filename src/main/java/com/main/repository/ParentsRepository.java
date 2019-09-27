@@ -8,10 +8,9 @@ import com.main.model.Parents;
 import reactor.core.publisher.Flux;
 
 @Repository
-public interface ParentsRepository extends ReactiveMongoRepository<Parents, String>{
+public interface ParentsRepository extends ReactiveMongoRepository<Parents, String> {
 
-	Flux<Parents> findByIdstudent(String idstudent);
-	
-	
-	Flux<Parents> findByIdfamily(String  idfamily);
+  Flux<Parents> findByIdfamily(String idfamily);
+
+  Flux<Parents> findByIdstudent(String idstudent);
 }

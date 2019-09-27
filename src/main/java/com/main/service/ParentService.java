@@ -7,17 +7,17 @@ import reactor.core.publisher.Mono;
 
 public interface ParentService {
 
-    Flux <Parents> getAll();
-	
-    Flux<Parents> findByIdstudent(String idstudent);
-    
-    Mono<Parents> findById(String  id);
-	
-    Mono<Parents> Modifyparents(String id,Parents parents);
-    
-	Mono<Parents> createParents( Parents parents);
-  
-	Mono<Void> deleteById(String id);
-	
-	Flux<Parents> findByIdfamily(String  idfamily);
+  Mono<Parents> createParents(Parents parents);
+
+  Mono<Void> deleteById(String id);
+
+  Mono<Parents> findById(String id);
+
+  Flux<Parents> findByIdfamily(String idfamily);
+
+  Flux<Parents> findByIdstudent(String idstudent);
+
+  Flux<Parents> getAll();
+
+  Mono<Parents> Modifyparents(String id, Parents parents);
 }
